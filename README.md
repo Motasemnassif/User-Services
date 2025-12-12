@@ -143,7 +143,7 @@ POST /api/logout
 Authorization: Bearer {access_token}
 ```
 
-#### Get Current User
+#### Get Current User (User Profile ) 
 
 ```http
 GET /api/me
@@ -159,13 +159,11 @@ GET /api/users?page=1&per_page=15
 Authorization: Bearer {access_token}
 ```
 
-#### Create User
+#### Create User (Signup)
 
 ```http
 POST /api/users
 Content-Type: application/json
-Authorization: Bearer {access_token}
-
 {
     "name": "John Doe",
     "email": "john@example.com",
